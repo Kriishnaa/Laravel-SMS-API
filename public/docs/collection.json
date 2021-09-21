@@ -1,0 +1,931 @@
+{
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "type": "string",
+            "name": "string",
+            "value": "localhost"
+        }
+    ],
+    "info": {
+        "name": "Laravel",
+        "_postman_id": "5b2494ef-f1ee-43d3-8465-1a65b5c133af",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Endpoints",
+            "description": "",
+            "item": [
+                {
+                    "name": "Return an empty response simply to trigger the storage of the CSRF cookie in the browser.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "sanctum\/csrf-cookie",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/sanctum\/csrf-cookie"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "api\/user",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/user",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/user"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "api\/user Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/user",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/user"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"Unauthenticated.\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/clients"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "Display a listing of the resource. Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/clients",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/clients"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Grace Reinger III\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Emelia Haley\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Rolando Haley V\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Amir Swaniawski\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Rosalyn Boyle\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Rashad Gutkowski\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Emmy Jones I\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Savanah Eichmann\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Prof. Frida Reynolds\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Mrs. Kiera Purdy III\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Prof. Margarita Quigley DVM\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Dr. Payton Ortiz Jr.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Bryana Wiegand\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Brad Collins\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Britney Osinski\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:28.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:28.000000Z\"\n        }\n    ],\n    \"message\": \"Clients retrieved successfully.\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/clients"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients\/:client",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/clients\/:client",
+                            "variable": [
+                                {
+                                    "id": "client",
+                                    "key": "client",
+                                    "value": "libero",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "Display the specified resource. Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/clients\/:client",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/clients\/:client",
+                                    "variable": [
+                                        {
+                                            "id": "client",
+                                            "key": "client",
+                                            "value": "libero",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\Client] libero\",\n    \"exception\": \"Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\NotFoundHttpException\",\n    \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n    \"line\": 385,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n            \"line\": 332,\n            \"function\": \"prepareException\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\nunomaduro\\\\collision\\\\src\\\\Adapters\\\\Laravel\\\\ExceptionHandler.php\",\n            \"line\": 54,\n            \"function\": \"render\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Pipeline.php\",\n            \"line\": 51,\n            \"function\": \"render\",\n            \"class\": \"NunoMaduro\\\\Collision\\\\Adapters\\\\Laravel\\\\ExceptionHandler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 172,\n            \"function\": \"handleException\",\n            \"class\": \"Illuminate\\\\Routing\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 127,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 103,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 55,\n            \"function\": \"handleRequestUsingNamedLimiter\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 103,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 697,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 672,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 636,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 625,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 166,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 128,\n            \"function\": \"Illuminate\\\\Foundation\\\\Http\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 40,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 86,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\fruitcake\\\\laravel-cors\\\\src\\\\HandleCors.php\",\n            \"line\": 52,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Fruitcake\\\\Cors\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 39,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 103,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 141,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 110,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 324,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 305,\n            \"function\": \"callLaravelOrLumenRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 76,\n            \"function\": \"makeApiCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 51,\n            \"function\": \"makeResponseCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 41,\n            \"function\": \"makeResponseCallIfEnabledAndNoSuccessResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 236,\n            \"function\": \"__invoke\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 172,\n            \"function\": \"iterateThroughStrategies\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 127,\n            \"function\": \"fetchResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 119,\n            \"function\": \"processRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 73,\n            \"function\": \"processRoutes\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 36,\n            \"function\": \"handle\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Util.php\",\n            \"line\": 40,\n            \"function\": \"Illuminate\\\\Container\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 93,\n            \"function\": \"unwrapIfClosure\",\n            \"class\": \"Illuminate\\\\Container\\\\Util\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 37,\n            \"function\": \"callBoundMethod\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Container.php\",\n            \"line\": 651,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 136,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\Container\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Command\\\\Command.php\",\n            \"line\": 299,\n            \"function\": \"execute\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 121,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Command\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 978,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 295,\n            \"function\": \"doRunCommand\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 167,\n            \"function\": \"doRun\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Application.php\",\n            \"line\": 92,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Console\\\\Kernel.php\",\n            \"line\": 129,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\artisan\",\n            \"line\": 37,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Console\\\\Kernel\",\n            \"type\": \"->\"\n        }\n    ]\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients\/:client",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/clients\/:client",
+                            "variable": [
+                                {
+                                    "id": "client",
+                                    "key": "client",
+                                    "value": "consectetur",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/clients\/:client",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/clients\/:client",
+                            "variable": [
+                                {
+                                    "id": "client",
+                                    "key": "client",
+                                    "value": "suscipit",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/services",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/services"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "Display a listing of the resource. Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/services",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/services"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Prof. Maximillia Bernier PhD\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Florida Muller\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Vella Swift I\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Ms. Orie Lockman\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Dr. Brett Klocko IV\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Raleigh Graham I\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Floyd Stamm\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Graciela Rau\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Joaquin Heaney\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Elias Mitchell\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Mr. Jocelyn Schultz V\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Jessyca Spencer\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Hortense McDermott\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Zachariah Cremin\",\n            \"status\": 0,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Jerod Brown\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        }\n    ],\n    \"message\": \"services retrieved successfully.\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/services",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/services"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/services\/:service",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/services\/:service",
+                            "variable": [
+                                {
+                                    "id": "service",
+                                    "key": "service",
+                                    "value": "blanditiis",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "Display the specified resource. Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/services\/:service",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/services\/:service",
+                                    "variable": [
+                                        {
+                                            "id": "service",
+                                            "key": "service",
+                                            "value": "blanditiis",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\Service] blanditiis\",\n    \"exception\": \"Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\NotFoundHttpException\",\n    \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n    \"line\": 385,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n            \"line\": 332,\n            \"function\": \"prepareException\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\nunomaduro\\\\collision\\\\src\\\\Adapters\\\\Laravel\\\\ExceptionHandler.php\",\n            \"line\": 54,\n            \"function\": \"render\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Pipeline.php\",\n            \"line\": 51,\n            \"function\": \"render\",\n            \"class\": \"NunoMaduro\\\\Collision\\\\Adapters\\\\Laravel\\\\ExceptionHandler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 172,\n            \"function\": \"handleException\",\n            \"class\": \"Illuminate\\\\Routing\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 127,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 103,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 55,\n            \"function\": \"handleRequestUsingNamedLimiter\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 103,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 697,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 672,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 636,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 625,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 166,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 128,\n            \"function\": \"Illuminate\\\\Foundation\\\\Http\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 40,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 86,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\fruitcake\\\\laravel-cors\\\\src\\\\HandleCors.php\",\n            \"line\": 52,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Fruitcake\\\\Cors\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 39,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 103,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 141,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 110,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 324,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 305,\n            \"function\": \"callLaravelOrLumenRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 76,\n            \"function\": \"makeApiCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 51,\n            \"function\": \"makeResponseCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 41,\n            \"function\": \"makeResponseCallIfEnabledAndNoSuccessResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 236,\n            \"function\": \"__invoke\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 172,\n            \"function\": \"iterateThroughStrategies\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 127,\n            \"function\": \"fetchResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 119,\n            \"function\": \"processRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 73,\n            \"function\": \"processRoutes\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 36,\n            \"function\": \"handle\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Util.php\",\n            \"line\": 40,\n            \"function\": \"Illuminate\\\\Container\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 93,\n            \"function\": \"unwrapIfClosure\",\n            \"class\": \"Illuminate\\\\Container\\\\Util\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 37,\n            \"function\": \"callBoundMethod\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Container.php\",\n            \"line\": 651,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 136,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\Container\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Command\\\\Command.php\",\n            \"line\": 299,\n            \"function\": \"execute\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 121,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Command\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 978,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 295,\n            \"function\": \"doRunCommand\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 167,\n            \"function\": \"doRun\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Application.php\",\n            \"line\": 92,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Console\\\\Kernel.php\",\n            \"line\": 129,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\artisan\",\n            \"line\": 37,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Console\\\\Kernel\",\n            \"type\": \"->\"\n        }\n    ]\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/services\/:service",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/services\/:service",
+                            "variable": [
+                                {
+                                    "id": "service",
+                                    "key": "service",
+                                    "value": "velit",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/services\/:service",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/services\/:service",
+                            "variable": [
+                                {
+                                    "id": "service",
+                                    "key": "service",
+                                    "value": "consequatur",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display a listing of the resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/client-services",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/client-services"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "Display a listing of the resource. Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/client-services",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/client-services"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"client_id\": 1,\n            \"service_id\": 1,\n            \"configuration_json_data\": \"Perferendis nam enim optio eos. Minus animi voluptates quis esse. Odio voluptas qui ipsum velit consequatur distinctio omnis. Itaque veniam in omnis quae necessitatibus dolores tempore.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"client_id\": 2,\n            \"service_id\": 2,\n            \"configuration_json_data\": \"Dolorem incidunt qui iusto. Architecto sint hic itaque recusandae quam aut dolorem.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 3,\n            \"client_id\": 3,\n            \"service_id\": 3,\n            \"configuration_json_data\": \"Amet et itaque doloribus ullam saepe a qui. Cumque quae itaque quisquam consequatur expedita. Sit est sed illo quia quaerat quibusdam sapiente nesciunt. Saepe dicta accusantium eveniet.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 4,\n            \"client_id\": 4,\n            \"service_id\": 4,\n            \"configuration_json_data\": \"Consequatur aliquam placeat est. Debitis repudiandae amet quia rem enim distinctio. Dolore dolorum temporibus praesentium molestias ad animi.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 5,\n            \"client_id\": 5,\n            \"service_id\": 566,\n            \"configuration_json_data\": \"Est consequatur doloremque sed assumenda minus voluptatum. Repellendus harum earum et ratione. Cupiditate animi eius alias. Facilis est quaerat nihil et.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 6,\n            \"client_id\": 6,\n            \"service_id\": 6,\n            \"configuration_json_data\": \"Odio ratione incidunt consequatur reprehenderit maiores voluptas dolore non. Fuga quae doloremque voluptatem tenetur perspiciatis minima reiciendis iusto. Dolor eos facere sit et voluptatem ab.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 7,\n            \"client_id\": 7,\n            \"service_id\": 7,\n            \"configuration_json_data\": \"Dolore totam aperiam qui blanditiis. Et autem et totam dignissimos. Magnam ipsum similique rerum qui.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 8,\n            \"client_id\": 8,\n            \"service_id\": 8,\n            \"configuration_json_data\": \"Soluta illo veniam alias ut tempora dolorem at. Occaecati ratione explicabo aut iusto. Est pariatur architecto sint officia quis ea. Magni voluptatem aut quae sunt.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 9,\n            \"client_id\": 9,\n            \"service_id\": 9,\n            \"configuration_json_data\": \"Doloremque quia alias aut tenetur ea aspernatur at. Voluptatem ratione optio hic aut. Et temporibus quae dolor deserunt repellat eligendi nulla. Est nulla possimus corrupti accusantium molestias numquam.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 10,\n            \"client_id\": 10,\n            \"service_id\": 10,\n            \"configuration_json_data\": \"Assumenda ea nulla sit facere eveniet. Nulla eum aliquam at nobis aut est. Necessitatibus nam nemo dicta at sequi aliquid impedit. Commodi a in a sunt nemo dolorum ut.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 11,\n            \"client_id\": 11,\n            \"service_id\": 11,\n            \"configuration_json_data\": \"Qui et odio fugit fugiat deleniti. Omnis impedit nihil consequatur fugiat ab. Omnis velit dolorem omnis soluta libero et. Rem nostrum aspernatur qui sapiente.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 12,\n            \"client_id\": 12,\n            \"service_id\": 12,\n            \"configuration_json_data\": \"Minus culpa ut quaerat eos voluptas. Ducimus natus qui provident fugit. Consequatur enim dolorum magni impedit libero.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 13,\n            \"client_id\": 13,\n            \"service_id\": 13,\n            \"configuration_json_data\": \"Ut rerum suscipit repellat placeat. Magnam veritatis voluptatum necessitatibus fuga est. Eos sint ipsam sunt velit optio vel fugit. Repellendus sequi autem laborum ab iusto cum voluptatem minima.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 14,\n            \"client_id\": 14,\n            \"service_id\": 14,\n            \"configuration_json_data\": \"Dignissimos fuga asperiores in facere voluptatum. Ipsam voluptates quibusdam quo debitis. Est quae enim nesciunt libero.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        },\n        {\n            \"id\": 15,\n            \"client_id\": 15,\n            \"service_id\": 15,\n            \"configuration_json_data\": \"In sit aut sit voluptatum molestias odit. Architecto et qui natus dolor odio. Velit et mollitia ab quod cumque harum a molestias.\",\n            \"status\": 1,\n            \"created_at\": \"2021-09-21T12:02:29.000000Z\",\n            \"updated_at\": \"2021-09-21T12:02:29.000000Z\"\n        }\n    ],\n    \"message\": \"Client service retrieved successfully.\"\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Store a newly created resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/client-services",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/client-services"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Display the specified resource.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/client-services\/:client_service",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/client-services\/:client_service",
+                            "variable": [
+                                {
+                                    "id": "client_service",
+                                    "key": "client_service",
+                                    "value": "aut",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "Display the specified resource. Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "api\/client-services\/:client_service",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/api\/client-services\/:client_service",
+                                    "variable": [
+                                        {
+                                            "id": "client_service",
+                                            "key": "client_service",
+                                            "value": "aut",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "{\n    \"message\": \"No query results for model [App\\\\Models\\\\ClientService] aut\",\n    \"exception\": \"Symfony\\\\Component\\\\HttpKernel\\\\Exception\\\\NotFoundHttpException\",\n    \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n    \"line\": 385,\n    \"trace\": [\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Exceptions\\\\Handler.php\",\n            \"line\": 332,\n            \"function\": \"prepareException\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\nunomaduro\\\\collision\\\\src\\\\Adapters\\\\Laravel\\\\ExceptionHandler.php\",\n            \"line\": 54,\n            \"function\": \"render\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Exceptions\\\\Handler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Pipeline.php\",\n            \"line\": 51,\n            \"function\": \"render\",\n            \"class\": \"NunoMaduro\\\\Collision\\\\Adapters\\\\Laravel\\\\ExceptionHandler\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 172,\n            \"function\": \"handleException\",\n            \"class\": \"Illuminate\\\\Routing\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 127,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 103,\n            \"function\": \"handleRequest\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests.php\",\n            \"line\": 55,\n            \"function\": \"handleRequestUsingNamedLimiter\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Routing\\\\Middleware\\\\ThrottleRequests\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 103,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 697,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 672,\n            \"function\": \"runRouteWithinStack\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 636,\n            \"function\": \"runRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Routing\\\\Router.php\",\n            \"line\": 625,\n            \"function\": \"dispatchToRoute\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 166,\n            \"function\": \"dispatch\",\n            \"class\": \"Illuminate\\\\Routing\\\\Router\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 128,\n            \"function\": \"Illuminate\\\\Foundation\\\\Http\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull.php\",\n            \"line\": 31,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ConvertEmptyStringsToNull\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest.php\",\n            \"line\": 21,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings.php\",\n            \"line\": 40,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TransformsRequest\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\TrimStrings\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize.php\",\n            \"line\": 27,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\ValidatePostSize\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance.php\",\n            \"line\": 86,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Middleware\\\\PreventRequestsDuringMaintenance\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\fruitcake\\\\laravel-cors\\\\src\\\\HandleCors.php\",\n            \"line\": 52,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Fruitcake\\\\Cors\\\\HandleCors\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Http\\\\Middleware\\\\TrustProxies.php\",\n            \"line\": 39,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 167,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Http\\\\Middleware\\\\TrustProxies\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Pipeline\\\\Pipeline.php\",\n            \"line\": 103,\n            \"function\": \"Illuminate\\\\Pipeline\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 141,\n            \"function\": \"then\",\n            \"class\": \"Illuminate\\\\Pipeline\\\\Pipeline\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Http\\\\Kernel.php\",\n            \"line\": 110,\n            \"function\": \"sendRequestThroughRouter\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 324,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Http\\\\Kernel\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 305,\n            \"function\": \"callLaravelOrLumenRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 76,\n            \"function\": \"makeApiCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 51,\n            \"function\": \"makeResponseCall\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls.php\",\n            \"line\": 41,\n            \"function\": \"makeResponseCallIfEnabledAndNoSuccessResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 236,\n            \"function\": \"__invoke\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Strategies\\\\Responses\\\\ResponseCalls\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 172,\n            \"function\": \"iterateThroughStrategies\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Extracting\\\\Generator.php\",\n            \"line\": 127,\n            \"function\": \"fetchResponses\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 119,\n            \"function\": \"processRoute\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Extracting\\\\Generator\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\knuckleswtf\\\\scribe\\\\src\\\\Commands\\\\GenerateDocumentation.php\",\n            \"line\": 73,\n            \"function\": \"processRoutes\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 36,\n            \"function\": \"handle\",\n            \"class\": \"Knuckles\\\\Scribe\\\\Commands\\\\GenerateDocumentation\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Util.php\",\n            \"line\": 40,\n            \"function\": \"Illuminate\\\\Container\\\\{closure}\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 93,\n            \"function\": \"unwrapIfClosure\",\n            \"class\": \"Illuminate\\\\Container\\\\Util\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\BoundMethod.php\",\n            \"line\": 37,\n            \"function\": \"callBoundMethod\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Container\\\\Container.php\",\n            \"line\": 651,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\BoundMethod\",\n            \"type\": \"::\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 136,\n            \"function\": \"call\",\n            \"class\": \"Illuminate\\\\Container\\\\Container\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Command\\\\Command.php\",\n            \"line\": 299,\n            \"function\": \"execute\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Command.php\",\n            \"line\": 121,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Command\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 978,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Command\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 295,\n            \"function\": \"doRunCommand\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\symfony\\\\console\\\\Application.php\",\n            \"line\": 167,\n            \"function\": \"doRun\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Console\\\\Application.php\",\n            \"line\": 92,\n            \"function\": \"run\",\n            \"class\": \"Symfony\\\\Component\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Console\\\\Kernel.php\",\n            \"line\": 129,\n            \"function\": \"run\",\n            \"class\": \"Illuminate\\\\Console\\\\Application\",\n            \"type\": \"->\"\n        },\n        {\n            \"file\": \"C:\\\\Users\\\\KK\\\\Desktop\\\\Laravel_SMS_Service\\\\SMS-Service\\\\artisan\",\n            \"line\": 37,\n            \"function\": \"handle\",\n            \"class\": \"Illuminate\\\\Foundation\\\\Console\\\\Kernel\",\n            \"type\": \"->\"\n        }\n    ]\n}"
+                        }
+                    ]
+                },
+                {
+                    "name": "Update the specified resource in storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/client-services\/:client_service",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/client-services\/:client_service",
+                            "variable": [
+                                {
+                                    "id": "client_service",
+                                    "key": "client_service",
+                                    "value": "ut",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Remove the specified resource from storage.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/client-services\/:client_service",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/client-services\/:client_service",
+                            "variable": [
+                                {
+                                    "id": "client_service",
+                                    "key": "client_service",
+                                    "value": "et",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "Sending SMS based on details",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "api\/sms-sending",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/api\/sms-sending"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "\/",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "{{baseUrl}}",
+                            "path": "\/",
+                            "query": [],
+                            "raw": "http:\/\/{{baseUrl}}\/\/"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": [
+                        {
+                            "name": "\/ Response #1",
+                            "originalRequest": {
+                                "url": {
+                                    "protocol": "http",
+                                    "host": "{{baseUrl}}",
+                                    "path": "\/",
+                                    "query": [],
+                                    "raw": "http:\/\/{{baseUrl}}\/\/"
+                                },
+                                "method": "GET",
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application\/json"
+                                    },
+                                    {
+                                        "key": "Accept",
+                                        "value": "application\/json"
+                                    }
+                                ],
+                                "body": null,
+                                "description": "",
+                                "auth": {
+                                    "type": "noauth"
+                                }
+                            },
+                            "header": null,
+                            "cookie": [],
+                            "body": "null"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "noauth"
+    }
+}
