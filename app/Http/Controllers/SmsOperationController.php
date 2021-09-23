@@ -10,9 +10,9 @@ use App\Models\Client;
 use App\Models\Service;
 use App\Models\SmsOperation;
 use App\Traits\ResponseAPI;
-
 use Exception;
 use Twilio\Rest\Client as TwilioPackage;
+use Twilio\Http\CurlClient;
 
 class SmsOperationController extends Controller
 {
@@ -57,10 +57,15 @@ class SmsOperationController extends Controller
                 $account_sid = $twilio_data->twilio_sid;
                 $auth_token =  $twilio_data->twilio_token;
                 $twilio_number = $twilio_data->twilio_from;
+                
                 $client = new TwilioPackage($account_sid, $auth_token);
+                $curlOptions = [ CURLOPT_SSL_VERIFYHOST => false, CURLOPT_SSL_VERIFYPEER => false];
+                $client->setHttpClient(new CurlClient($curlOptions));
+                
                 $client->messages->create($receiverNumber, [
                     'from' => $twilio_number, 
                     'body' => $message]);
+                
                 $sms_meta_data = new SmsOperation();
                 $sms_meta_data->client_service_id = $clientServiceData[0]->id;
                 $sms_meta_data->receiver_number = $receiverNumber;
